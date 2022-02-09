@@ -1,0 +1,626 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 7px;
+}
+/* --------------------------Navbar Sectin--------------------------- */
+
+body {
+  background-color: rgb(12 16 39);
+}
+
+#navbar {
+  display: flex;
+  height: 4rem;
+  background-color: rgb(12 16 39);
+  justify-content: space-between;
+}
+
+/* ------Left Side Of navigation bar----- */
+
+#left-div {
+  display: flex;
+  align-items: center;
+}
+
+/* Coding Ninja Studio Image */
+
+#logo-image img {
+  height: 4rem;
+}
+
+/* Favrouite */
+
+header a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: snow;
+  margin-left: 6vmax;
+}
+
+/* -----Right Side Of navigation bar------ */
+
+#right-div {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
+
+/* SearchBox  */
+#search-box {
+  display: flex;
+  align-items: center;
+  background-color: #12193e;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+#search-bar {
+  border: none;
+  padding: 5px;
+  width: 20vmax;
+}
+
+input {
+  text-decoration: none;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+/* Profile Image */
+
+#profile img {
+  width: 3rem;
+  margin: 0px 5px;
+  border-radius: 50%;
+  align-self: center;
+  border-color: 5px solid snow;
+}
+
+/* Notification bell  */
+
+.fa-bell {
+  font-size: 1.5rem;
+  margin: 0rem 2.5rem;
+  color: white;
+}
+
+/* search-icon and mic-icon */
+#search-box .fas {
+  font-size: 1rem;
+  padding: 0px 7px;
+  color: rgb(218, 208, 208);
+}
+
+/* -----------------------MAIN----------------- */
+main {
+  display: flex;
+  margin: 5rem;
+}
+
+#main-section {
+  width: 70%;
+}
+
+/* Banner-songs*/
+#banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* banner-songs */
+
+.banner-songs img {
+  width: 19vmax;
+  height: 19vmax;
+  transition: ease-in-out 0.2s;
+}
+
+.banner-songs img:hover {
+  transform: scale(1.25);
+}
+
+/* -----------------second-section---------------- */
+/* Latest Released */
+#second-section h2 {
+  margin-top: 50px;
+  color: seashell;
+}
+
+#latest-release {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* div inside latest released songs */
+.latest-songs {
+  display: flex;
+  margin-bottom: 10px;
+  width: 26vmax;
+}
+
+.song-image {
+  position: relative;
+  width: 7vmax;
+}
+
+.song-image img {
+  flex-grow: 1;
+  width: 7vmax;
+}
+
+.latest-play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.latest-play:hover {
+  opacity: 1;
+}
+
+.song-name {
+  color: lavenderblush;
+  margin: 8% 3%;
+  flex-grow: 2;
+}
+
+.duration {
+  color: lavenderblush;
+  position: relative;
+  flex-grow: 1;
+}
+
+/*---------------- Third section ------------------*/
+#third-section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#third-section h2 {
+  color: blanchedalmond;
+}
+
+#popular-artist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist {
+  margin-right: 13px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.artist-play {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.8em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.artist-play:hover {
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.artist-play:hover {
+  background-color: white;
+  opacity: 0.5;
+}
+
+.artist img {
+  width: 8vmax;
+  border-radius: 50%;
+}
+
+.artist p {
+  text-align: center;
+  color: ivory;
+}
+
+/* ----------------fourth-section----------------- */
+#mood {
+  margin: 3rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #12193e;
+}
+
+#stations img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.mood-type img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+/* square box song type */
+#song-type {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* individual sings types */
+.child {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.child span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.parent {
+  width: 20vmax;
+  height: 13vmax;
+  overflow: hidden;
+}
+
+.parent:hover .child {
+  transform: scale(1.2);
+}
+
+.child1 {
+  background-image: url("../Images/mood/Party1.jpg");
+}
+
+.child2 {
+  background-image: url("../Images/mood/electronic.jpg");
+}
+
+.child3 {
+  background-image: url("../Images/mood/road\ trip.jpg");
+}
+
+#song-type img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+/* ---------------------Section fifth English songs ----------------------*/
+#fith-section {
+  margin-top: 50px;
+  color: blanchedalmond;
+}
+
+#six-section {
+  margin-top: 50px;
+  color: blanchedalmond;
+}
+
+#song-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  color: snow;
+  font-size: 0.9rem;
+}
+
+/* ----------------Aside section--------------- */
+aside {
+  width: 100%;
+  height: 50em;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#queue-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#queue-header h2 {
+  color: white;
+}
+
+#queue-header div {
+  position: relative;
+  color: hsl(191deg 73% 49%);
+}
+
+/* clickable feature on queue */
+.check,
+ul.submenu {
+  display: none;
+}
+
+/* /position the label/ */
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  top: 2rem;
+  text-align: left;
+  right: 1rem;
+  background-color: white;
+  padding: 5px;
+  width: 200px;
+  z-index: 1;
+  list-style: none;
+  box-shadow: 0px 0px 1px 1px black;
+}
+
+.submenu a {
+  font-size: 0.9rem;
+  color: black;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: lightgrey;
+  transition: all 0.3s;
+}
+
+/* /show the submenu when input is checked/ */
+input:checked ~ ul.submenu {
+  display: block;
+}
+
+#queue-header div p {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+/*------------ Queue-Songs -------------*/
+.list-songs {
+  display: flex;
+  margin: 10px 0px;
+  color: white;
+  align-items: center;
+}
+
+.list-songs div {
+  padding: 0.8rem;
+}
+
+.queue-song-image img {
+  width: 3rem;
+}
+
+.queue-song-name {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* ----------Footer Section--------------*/
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #c4c3d2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+#footer-song-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+#footer-song-info > div {
+  margin: 1vh;
+}
+
+#footer-song-image {
+  height: 4rem;
+  width: 4rem;
+  margin: 1vh;
+  background: url("../images/artist/Zayn-Malik.webp") center no-repeat;
+  background-size: contain;
+}
+
+#footer-song-name {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  margin: 0.1rem;
+}
+
+/*Player Controls*/
+
+/* Pause, Next, Shuffle &other Icons and Slider Styling*/
+
+#player {
+  width: 40%;
+  min-width: 200px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player-control {
+  width: 50%;
+}
+
+#player-slider-container {
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+/*Player Extras*/
+
+.player-extras {
+  display: flex;
+  width: 20%;
+  min-width: 115px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.volume-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#volume-slider {
+  width: 80%;
+}
+
+/*----------------------------- Media query--------------------------- */
+
+/* media query for extra small devices */
+
+@media (min-width: 365px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/* media query for small devices */
+
+@media (min-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* media query for extra-large devices */
+
+@media (max-width: 1020px) {
+  main{
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  #main-section {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0%;
+    font-size: 12px;
+  }
+
+  .banner-songs img {
+    width: 14rem;
+  }
+
+  #latest-release {
+    width: 100%;
+  }
+
+  .parent {
+    margin: 5px;
+  }
+
+  .queue-song-image img {
+    width: 5rem;
+  }
+
+  .latest-songs {
+    width: 25vh;
+  }
+}
+
+@media (max-width: 1330px) {
+  .latest-songs {
+    width: 25vh;
+  }
+}
